@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        /* General Styling */
+        body {
+            margin-top: 60px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Header Styling */
+        h1 {
+            background-color: #4f150b;
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            width: 200px;
+            margin: 0 auto 20px;
+        }
+
+        /* Form Container */
+        form {
+            display: inline-block;
+            text-align: left;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            border: 2px solid #ef75d5;
+        }
+
+        /* Labels */
+        label {
+            font-size: 20px;
+        }
+
+        /* Input Fields */
+        input {
+            height: 25px;
+            width: 200px;
+            padding-left: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        /* Button */
+        .btn-container {
+            display: flex;
+            justify-content: center; /* Centers the button */
+            margin-top: 10px;
+        }
+
+        button {
+            height: 35px;
+            width: 100px;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: #b30a0c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #5c748e;
+        }
+    </style>
+</head>
+<body>
+    <h1>LOGIN</h1>
+    <form>
+        <label>Username:</label>
+        <input class="user" type="text" required><br><br>
+
+        <label>Password:</label>
+        <input type="password" required><br><br>
+
+        <div class="btn-container">
+            <button>Login</button>
+        </div>
+    </form>
+</body>
+</html>

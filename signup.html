@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        /* General Page Styling */
+body {
+    margin-top: 60px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header Styling */
+h1 {
+    background-color: #c50b0b;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0 auto 20px;
+    width: 30%;
+    text-align: center;
+}
+
+/* Form Container */
+form {
+    display: inline-block;
+    text-align: left;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Group Styling */
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Input Fields & Selects */
+input, select {
+    width: 300px;
+    height: 30px;
+    padding-left: 8px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+}
+
+select {
+    width: 150px;
+}
+
+/* Labels */
+label {
+    font-size: 18px;
+    width: 150px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+/* Radio & Checkbox Groups */
+.radio-group, .checkbox-group {
+    display: flex;
+    gap: 10px; /* Small gap for better alignment */
+    align-items: center;
+}
+
+.radio-group label, .checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Button */
+button {
+    height: 40px;
+    width: 130px;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin: 20px auto;
+    cursor: pointer;
+    background-color: #ff6200;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #b7cbe0;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form>
+        <div class="form-group">
+            <label>Full Name:</label>
+            <input type="text" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="form-group">
+            <label>Set Password:</label>
+            <input type="password" placeholder="Enter your password" required>
+        </div>
+
+        <div class="form-group">
+            <label>E-mail:</label>
+            <input type="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-group">
+            <label>Phone Number:</label>
+            <input type="number" placeholder="Enter your phone number" required>
+        </div>
+
+        <!-- Sex Section (One Row) -->
+        <div class="form-group">
+            <label>Sex:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="sex" required> Male</label>
+                <label><input type="radio" name="sex"> Female</label>
+                <label><input type="radio" name="sex"> Others</label>
+            </div>
+        </div>
+
+        <!-- Languages Section (Next Row) -->
+        <div class="form-group">
+            <label>Languages:</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox"> English</label>
+                <label><input type="checkbox"> Telugu</label>
+                <label><input type="checkbox"> Hindi</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>DOB:</label>
+            <select>
+                <option disabled selected>Day</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+            </select>
+            <select>
+                <option disabled selected>Month</option>
+                <option>Jan</option>
+                <option>Feb</option>
+                <option>Mar</option>
+                <option>Apr</option>
+                <option>May</option>
+                <option>June</option>
+                <option>Dec</option>
+            </select>
+            <select>
+                <option disabled selected>Year</option>
+                <option>2004</option>
+                <option>2005</option>
+                <option>2006</option>
+            </select>
+        </div>
+
+        <button>Sign Up</button>
+    </form>
+</body>
+</html>
